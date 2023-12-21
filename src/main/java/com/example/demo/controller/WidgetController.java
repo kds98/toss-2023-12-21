@@ -40,7 +40,8 @@ public class WidgetController {
             amount = (String) requestData.get("amount");
         } catch (ParseException e) {
             throw new RuntimeException(e);
-        };
+        }
+        ;
         JSONObject obj = new JSONObject();
         obj.put("orderId", orderId);
         obj.put("amount", amount);
@@ -86,6 +87,7 @@ public class WidgetController {
 
     /**
      * 인증성공처리
+     *
      * @param request
      * @param model
      * @return
@@ -103,6 +105,7 @@ public class WidgetController {
 
     /**
      * 인증실패처리
+     *
      * @param request
      * @param model
      * @return
